@@ -1,0 +1,42 @@
+<!--pages/grade/grade.wxml-->
+<view class="headTip">对照文字点亮星星一颗星星为一分</view>
+<view class="gcont">
+  <view class="item" wx:for="{{grade}}" wx:key="id" wx:for-index="parentindex">
+    <view class="title">{{item.title}}</view>
+    <view class="levelWp">
+      <view class="level">
+        <view class="lab">0-3分：</view>
+        <view class="text">{{item.levelFirst}}</view>
+      </view>
+      <view class="h-42"></view>
+      <view class="level">
+        <view class="lab">4-6分：</view>
+        <view class="text">{{item.levelSecond}}</view>
+      </view>
+      <view class="h-42"></view>
+      <view class="level">
+        <view class="lab">7-10分：</view>
+        <view class="text">{{item.levelThird}}</view>
+      </view>
+      <view class="h-42"></view>
+    </view>
+    <view class="score">
+      <view class="star">
+        <view class="starDown clearfix">
+          <view class="sitem fl" wx:for="{{dstar}}" wx:for-index="sindex" wx:key="id" wx:for-item="dstar">
+            <image src="{{imgUrl}}/images/star-1.png" data-parentindex="{{parentindex}}" data-sindex="{{sindex}}" bindtap='selectStar'></image>
+          </view>
+        </view>
+        <view class="starUp clearfix">
+          <view class="sitem fl" wx:for="{{item.star}}" wx:key="id" wx:for-item="star"><image src="{{imgUrl}}/images/star-2.png"></image></view>
+        </view>
+      </view>
+    </view>
+  </view>
+  <view class="h-30"></view>
+</view>
+<view class="h-88"></view>
+<!--底部固定-->
+<view class="fixedBtn">
+  <button class="btn" bindtap='getTotalScore'>提交我的匿名打分</button>
+</view>

@@ -1,0 +1,119 @@
+/* pages/grade/grade.wxss */
+.line-2{
+  height: 0;
+  border-bottom: 2rpx dashed #999999;
+}
+.h-42{
+  height: 42rpx;
+}
+.h-30{
+  height: 30rpx;
+}
+.h-88{
+  height: 88rpx;
+}
+.fl{
+  float: left;
+}
+.fr{
+  float: right;
+}
+.clearfix::after{
+  clear:both;
+  height: 0;
+  content: ".";
+  display: block;
+  visibility: hidden;
+}
+page{
+  background: #eeeeee;
+}
+.headTip{
+  height: 68rpx;
+  line-height: 68rpx;
+  font-size: 24rpx;
+  color: #d43c33;
+  background: #f7f7f7;
+  text-align: center;
+}
+.gcont .item{
+  margin:30rpx auto 0;
+  width: 650rpx;
+  padding: 0 20rpx;
+  border-radius: 20rpx;
+  background: #fff;
+}
+.gcont .item .title{
+  font-size: 32rpx;
+  color: #000;
+  line-height: 84rpx;
+  height: 84rpx;
+  text-align: center;
+}
+.gcont .item .levelWp{
+  padding: 0 20rpx;
+  border-bottom: 2rpx dashed #999999;
+}
+.gcont .item .level .lab{
+  font-size: 30rpx;
+  color: #333333;
+  line-height: 30rpx;
+}
+.gcont .item .level .text{
+  padding-top: 8rpx;
+  line-height: 46rpx;
+  font-size: 28rpx;
+  color: #666666;
+}
+.gcont .score{
+  position:relative;
+  height:34rpx;
+  padding:23rpx 0;
+}
+.gcont .score .star{
+  position: relative;
+  height: 34rpx;
+}
+.gcont .score .star .starDown{
+  position: absolute;
+  left: 0;
+  top: 0;
+  height: 34rpx;
+}
+.gcont .score .star .sitem{
+  width: 34rpx;
+  height: 34rpx;
+  margin-left:34rpx; 
+}
+.gcont .score .star .sitem:nth-of-type(1){
+  margin-left: 2rpx;
+}
+.gcont .score .star .sitem image{
+  display: block;
+  width: 34rpx;
+  height: 34rpx;
+}
+
+.fixedBtn{
+  position: fixed;
+  width: 750rpx;
+  height: 88rpx;
+  background: #da3126;
+  left: 0;
+  bottom: 0;
+}
+.fixedBtn .btn{
+  display: block;
+  width: 750rpx;
+  height: 88rpx;
+  padding: 0;
+  margin: 0;
+  background: #da3126;
+  border-radius: 0;
+  font-size: 36rpx;
+  color: #f9f9f9;
+}
+button::after{
+  border: 0;
+  outline: 0;
+}
